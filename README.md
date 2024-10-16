@@ -1,2 +1,2 @@
 # Odin-Form
-Odin Project sign-in form
+The sign-in form exercise for the Odin Project.
