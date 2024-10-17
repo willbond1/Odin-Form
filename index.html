@@ -7,6 +7,65 @@
     <title>Sign-In Form</title>
 </head>
 <body>
-    
+    <div class="banner">
+        <div class="header">
+            <img src="./assets/odin-lined.png" alt="A stylized line drawing of the Norse god Odin." id="header-icon">
+            <div id="header-text">
+                ODIN
+            </div>
+        </div>
+        <div class="footer">
+            <div id="credit">
+                Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="intro">
+            This is not a real online service! This is a fake login page created as part of The Odin Project, a free online full-stack development course.
+            Don't sign in here, sign in <a href="https://www.theodinproject.com">there!</a>
+        </div>
+        
+        <form id="signup" action="#">
+            <h1 class="form-header">Let's do this!</h1>
+            <fieldset>
+                <div class="form-input">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                </div>
+
+                <div class="form-input">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Smith" required>
+                </div>
+
+                <div class="form-input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="user@domain.com" required>
+                </div>
+
+                <div class="form-input">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+
+                <div class="form-input">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-input">
+                    <label for="password-confirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="password-confirm" name="password-confirm" required>
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="form-footer">
+            <button type="submit" form="signup" id="signup-button">Create Account</button>
+            <div id="login-text">Already have an account? <a href="#">Log in</a></div>
+        </div>
+    </div>
 </body>
 </html>
